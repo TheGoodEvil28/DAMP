@@ -137,3 +137,59 @@ textarea {
         width: 100%;
     }
 }
+
+/* ==== FIX GRID & FLEX ==== */
+
+.sell-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+/* Profil & Form (Kiri) */
+.product-section {
+    flex: 1 1 50%;
+    min-width: 300px;
+}
+
+/* Kontak Detail (Kanan) */
+.detail-section {
+    flex: 1 1 40%;
+    min-width: 300px;
+}
+
+/* Biar input rapi */
+.detail-section input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+/* Gaya pada .photo-item tetap */
+.photo-item {
+    width: 100%;
+    max-width: 140px;
+    height: auto;
+    padding: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sell-container {
+        flex-direction: column;
+    }
+
+    .product-section, .detail-section {
+        flex: 1 1 100%;
+    }
+
+    .photo-item {
+        margin: 0 auto;
+    }
+}
+

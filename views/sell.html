@@ -40,13 +40,13 @@
         </li>
         <li class="nav-item">
           <a class="nav-link mobile-menu-item {{ request()->is('shopwomen') ? 'active' : '' }}" href="../views/shop.html">
-            <span class="mobile-text">SHOP</span>
+            <span class="mobile-text">ABOUT</span>
             <i class="fas fa-chevron-right mobile-arrow"></i> 
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link mobile-menu-item {{ request()->is('sell') ? 'active' : '' }}" href="../views/sell.html">
-            <span class="mobile-text">SELL</span>
+            <span class="mobile-text">KONTAK</span>
             <i class="fas fa-chevron-right mobile-arrow"></i> 
           </a>
         </li>
@@ -54,11 +54,6 @@
     </div>
     <!-- User Icons (Right Side on Desktop, Top with Logo on Mobile) -->
     <div class="user-icons d-flex align-items-center">
-      <a class="nav-link" href="#"><img src="../resource/images/Icon_Gambar/Semua_Icon/notification.png" alt="Notification Icon" style="width: 24px; height: 24px;"></a>
-      <a class="nav-link" href="#"><img src="../resource/images/Icon_Gambar/Semua_Icon/love.png" alt="Love Icon" style="width: 24px; height: 24px;"></a>
-      <a class="nav-link" href="#"><img src="../resource/images/Icon_Gambar/Semua_Icon/gift.png" alt="Gift Icon" style="width: 24px; height: 24px;"></a>
-      <a class="nav-link" href="#"><img src="../resource/images/Icon_Gambar/Semua_Icon/shopping bag.png" alt="Shopping Bag Icon" style="width: 24px; height: 24px;"></a>
-      <a class="nav-link profile-link position-relative" href="#" id="profileIcon">
         <img src="../resource/images/Icon_Gambar/Semua_Icon/profile.png" alt="Profile Icon" style="width: 24px; height: 24px;">
       </a>
     </div>
@@ -67,90 +62,74 @@
 </nav>
 
 <section class="sell-section">
-    <form action="../views/sell2.html" method="GET">
-    <h2>Sell Your Items</h2>
-        <div class="sell-container">
-            <!-- Product Section -->
-            <div class="product-section">
-                <h3><b>Product</b></h3>
-                <div class="product-photo-grid">
-                    <!-- Photo Items -->
-                    <div class="photo-item">
-                        <label for="add-photo">
-                            <img src="../resource/images/plus.png" alt="Add Photo">
-                        </label>
-                        <span>Add Photo</span> 
-                        <input type="file" id="add-photo" name="photo" style="display:none;">
-                    </div>
-                    <div class="photo-item"></div>
-                    <div class="photo-item"></div>
-                    <div class="photo-item"></div>
-                    <div class="photo-item"></div>
-                    <div class="photo-item"></div>
-                </div>
+  <form action="mailto:andikasatya@gmail.com" method="POST" enctype="text/plain">
+    <h2>Hubungi Saya</h2>
+    <div class="sell-container">
 
-                <textarea name="description" placeholder="Describe the items to be sold (brand, name, size, and condition)"></textarea>
-            </div>
-
-            <!-- Detail Information Section -->
-            <div class="detail-section">
-                <h3><b>Detail Information</b></h3>
-
-                <label for="category">Category</label>
-                <select name="category">
-                    <option value="">Category</option>
-                    <option value="Women's Fashion">Women's Fashion</option>
-                    <option value="Men's Fashion">Men's Fashion</option>
-                    <option value="Kid's Fashion">Kid's Fashion</option>
-                </select>
-
-                <label for="brand">Brand</label>
-                <select name="brand">
-                    <option value="">Brand</option>
-                    <option value="Uniqlo">Uniqlo</option>
-                    <option value="Zara">Zara</option>
-                    <option value="Adidas">Adidas</option>
-                </select>
-
-                <label for="condition">Condition</label>
-                <select name="condition">
-                    <option value="">Condition</option>
-                    <option value="New">New</option>
-                    <option value="Like New">Like New</option>
-                    <option value="Used">Used</option>
-                </select>
-
-                <label for="color">Color</label>
-                <select name="color">
-                    <option value="">Color</option>
-                    <option value="Red">Red</option>
-                    <option value="Blue">Blue</option>
-                    <option value="Black">Black</option>
-                </select>
-
-                <label for="size">Size</label>
-                <select name="size">
-                    <option value="">Size</option>
-                    <option value="Small">Small</option>
-                    <option value="Medium">Medium</option>
-                    <option value="Large">Large</option>
-                </select>
-
-                <label for="fabric">Type of Fabric</label>
-                <select name="fabric">
-                    <option value="">Type of Fabric</option>
-                    <option value="Cotton">Cotton</option>
-                    <option value="Polyester">Polyester</option>
-                    <option value="Wool">Wool</option>
-                </select>
-            </div>
+      <!-- Informasi Pribadi -->
+      <div class="product-section">
+        <h3><b>Profil Singkat</b></h3>
+        <div class="product-photo-grid">
+          <div class="photo-item">
+            <img src="../resource/images/Icon_Gambar/Semua_Icon/profile.png" alt="Foto Profil" style="border-radius: 8px;">
+            <span><b>Andika Satya</b><br>Full-Stack Developer & Network Enthusiast</span>
+          </div>
         </div>
+        <p style="margin-top: 20px; line-height: 1.7;">
+          Saya terbuka untuk kolaborasi, pekerjaan freelance, magang, serta pengembangan proyek berbasis web, sistem informasi, atau keamanan jaringan. Anda bisa menghubungi saya melalui form ini atau langsung melalui kontak di samping.
+        </p>
+        <textarea name="message" placeholder="Tulis pesan Anda untuk saya (misal: ajakan kerja sama, proyek, konsultasi, dll)" required></textarea>
+      </div>
 
-        <div class="submit-button">
-            <button type="submit"><b>Submit</b></button>
-        </div>
-    </form>
+      <!-- Detail Kontak -->
+      <div class="detail-section">
+        <h3><b>Detail Kontak</b></h3>
+
+        <label>Email</label>
+        <input type="text" value="andikasatya@gmail.com" disabled style="background-color: #f4f4f4;">
+
+        <label>WhatsApp</label>
+        <input type="text" value="+62 812-XXXX-XXXX" disabled style="background-color: #f4f4f4;">
+
+        <label>LinkedIn</label>
+        <a href="https://linkedin.com/in/andikasatya" target="_blank">
+          <input type="text" value="linkedin.com/in/andikasatya" disabled style="background-color: #f4f4f4;">
+        </a>
+
+        <label>GitHub</label>
+        <a href="https://github.com/andikasatya" target="_blank">
+          <input type="text" value="github.com/andikasatya" disabled style="background-color: #f4f4f4;">
+        </a>
+
+        <label>Domisili</label>
+        <input type="text" value="Malang, Indonesia" disabled style="background-color: #f4f4f4;">
+
+        <label>Instagram</label>
+        <a href="https://instagram.com/andika.satya" target="_blank">
+          <input type="text" value="@andika.satya" disabled style="background-color: #f4f4f4;">
+        </a>
+      </div>
+    </div>
+
+    <div class="submit-button">
+      <button type="submit"><b>Kirim via Email</b></button>
+    </div>
+  </form>
+
+  <!-- Tambahan Map atau Ajakan Kolaborasi -->
+  <div class="container mt-5">
+    <h4 class="text-center mb-3">Lokasi Saya</h4>
+    <div class="text-center mb-4">
+      <iframe src="https://www.google.com/maps?q=Universitas+Brawijaya+Malang&output=embed"
+        width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+
+    <div class="text-center">
+      <p>Silakan hubungi saya kapan pun Anda ingin berdiskusi atau berkolaborasi. Saya selalu terbuka untuk peluang baru dan ide-ide segar!</p>
+    </div>
+  </div>
 </section>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 

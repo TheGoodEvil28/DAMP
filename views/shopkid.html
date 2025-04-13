@@ -20,7 +20,7 @@
   <div class="container d-flex justify-content-between align-items-center top-bar">
     
     <!-- Logo -->
-    <a class="navbar-brand d-flex align-items-center" href="..index.html">
+    <a class="navbar-brand d-flex align-items-center" href="../index.html">
       <img src="../resource/images/Logo_Thriftin.png" alt="Thriftin Logo" class="img-fluid logo-image">
     </a>
 
@@ -32,310 +32,67 @@
 
     
 
-    <!-- Navigation Links -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item">
-          <a class="nav-link mobile-menu-item {{ request()->is('homepage') ? 'active' : '' }}" href="../index.html">
-            <span class="mobile-text">HOME</span>
-            <i class="fas fa-chevron-right mobile-arrow"></i> 
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link mobile-menu-item {{ request()->is('shopwomen') ? 'active' : '' }}" href="../views/shop.html">
-            <span class="mobile-text">SHOP</span>
-            <i class="fas fa-chevron-right mobile-arrow"></i> 
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link mobile-menu-item {{ request()->is('sell') ? 'active' : '' }}" href="../views/sell.html">
-            <span class="mobile-text">SELL</span>
-            <i class="fas fa-chevron-right mobile-arrow"></i> 
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- User Icons (Right Side on Desktop, Top with Logo on Mobile) -->
-    <div class="user-icons d-flex align-items-center">
-      <a class="nav-link" href="#"><img src="../resource/images/Icon_Gambar/Semua_Icon/notification.png" alt="Notification Icon" style="width: 24px; height: 24px;"></a>
-      <a class="nav-link" href="#"><img src="../resource/images/Icon_Gambar/Semua_Icon/love.png" alt="Love Icon" style="width: 24px; height: 24px;"></a>
-      <a class="nav-link" href="#"><img src="../resource/images/Icon_Gambar/Semua_Icon/gift.png" alt="Gift Icon" style="width: 24px; height: 24px;"></a>
-      <a class="nav-link" href="#"><img src="../resource/images/Icon_Gambar/Semua_Icon/shopping bag.png" alt="Shopping Bag Icon" style="width: 24px; height: 24px;"></a>
-      <a class="nav-link profile-link position-relative" href="#" id="profileIcon">
-        <img src="../resource/images/Icon_Gambar/Semua_Icon/profile.png" alt="Profile Icon" style="width: 24px; height: 24px;">
-      </a>
-    </div>
+   <!-- Navigation Links -->
+   <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+        <a class="nav-link mobile-menu-item {{ request()->is('homepage') ? 'active' : '' }}" href="../index.html">
+          <span class="mobile-text">HOME</span>
+          <i class="fas fa-chevron-right mobile-arrow"></i> 
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link mobile-menu-item {{ request()->is('shopwomen') ? 'active' : '' }}" href="../views/shop.html">
+          <span class="mobile-text">ABOUT</span>
+          <i class="fas fa-chevron-right mobile-arrow"></i> 
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link mobile-menu-item {{ request()->is('sell') ? 'active' : '' }}" href="../views/sell.html">
+          <span class="mobile-text">KONTAK</span>
+          <i class="fas fa-chevron-right mobile-arrow"></i> 
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- User Icons (Right Side on Desktop, Top with Logo on Mobile) -->
+  <div class="user-icons d-flex align-items-center">
+      <img src="../resource/images/Icon_Gambar/Semua_Icon/profile.png" alt="Profile Icon" style="width: 24px; height: 24px;">
+    </a>
+  </div>
 
   </div>
 </nav>
-<!-- Shop Section -->
-<section class="shop-section container my-5">
-    <div class="d-flex justify-content-between align-items-center mb-4">
-        <!-- Tabs (Women, Men, Kid) -->
-        <ul class="nav nav-tabs" id="categoryTabs">
-            <li class="nav-item">
-                <a class="nav-link" href="shop.html" data-category="women">Women</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="shopmen.html" data-category="men">Men</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="shopkid.html" data-category="kid">Kid</a>
-            </li>
-        </ul>
-
-        <!-- Search Bar -->
-        <div class="input-group search-wrapper">
-            <input type="text" class="form-control search-bar" placeholder="Search for items" id="search-input">
-        </div>
+<section class="about-section container my-5" id="network">
+    <h2 class="section-title text-center">Network & Security</h2>
+  
+    <p class="about-text text-center">
+      Minat saya terhadap jaringan komputer dan keamanan siber berawal dari ketertarikan terhadap bagaimana data berpindah dan dilindungi dalam dunia digital. Selama di bangku kuliah, saya aktif dalam laboratorium jaringan dan ikut dalam berbagai pelatihan seperti <strong>OSPF</strong>, <strong>VLAN</strong>, <strong>TCP/IP</strong>, serta eksplorasi tools seperti <strong>Wireshark</strong> dan <strong>Cisco Packet Tracer</strong>.
+    </p>
+  
+    <p class="about-text text-center">
+      Di luar praktik dasar, saya juga mengeksplorasi topik-topik lanjutan seperti <strong>firewall configuration</strong>, <strong>packet inspection</strong>, dan simulasi serangan seperti <strong>DoS/DDOS</strong> sebagai bentuk pemahaman risiko keamanan. Saya percaya bahwa keamanan tidak hanya soal alat, tapi juga pola pikir — bagaimana membangun sistem yang aman sejak tahap desain.
+    </p>
+  
+    <p class="about-text text-center">
+      Saat ini, saya sedang memperdalam pemahaman tentang <strong>arsitektur jaringan skala besar</strong>, <strong>honeypot</strong>, dan pendekatan keamanan berbasis <strong>Zero Trust</strong>. Harapan saya, kombinasi pemahaman development dan network security ini dapat menjadi nilai tambah dalam dunia profesional teknologi.
+    </p>
+  
+    <div class="text-center mt-4">
+      <img src="https://cdn-icons-png.flaticon.com/512/9191/9191933.png
+      " alt="Network & Security" class="img-fluid" style="max-width: 300px;">
     </div>
-
-    <!-- Filter Section -->
-    <div class="filters-section d-flex">
-        <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" id="categoryFilter" data-bs-toggle="dropdown" aria-expanded="false">
-                Category
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="categoryFilter">
-                <li><a class="dropdown-item" href="#" data-category="">Kids</a></li>
-                <li><a class="dropdown-item" href="#" data-category="tops">Tops</a></li>
-                <li><a class="dropdown-item" href="#" data-category="bottoms">Bottom</a></li>
-                <li><a class="dropdown-item" href="#" data-category="outerwear">Outerwear</a></li>
-                <li><a class="dropdown-item" href="#" data-category="dresses">Dresses</a></li>
-                <li><a class="dropdown-item" href="#" data-category="footwear">Footwear</a></li>
-            </ul>
-        </div>
-
-        <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" id="sizeFilter" data-bs-toggle="dropdown" aria-expanded="false">
-                Size
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="sizeFilter">
-                <li><a class="dropdown-item" href="#" data-size="">Size</a></li>
-                <li><a class="dropdown-item" href="#" data-size="s">S</a></li>
-                <li><a class="dropdown-item" href="#" data-size="m">M</a></li>
-                <li><a class="dropdown-item" href="#" data-size="l">L</a></li>
-                <li><a class="dropdown-item" href="#" data-size="xl">XL</a></li>
-                <li><a class="dropdown-item" href="#" data-size="onesize">Shoe Size</a></li>
-            </ul>
-        </div>
-
-        <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" id="priceFilter" data-bs-toggle="dropdown" aria-expanded="false">
-                Price
-            </button>
-            <ul class="dropdown-menu p-3">
-                <input type="number" id="minPrice" class="form-control" placeholder="Rp Min">
-                <span> - </span>
-                <input type="number" id="maxPrice" class="form-control" placeholder="Rp Max">
-                <div class="d-flex justify-content-between mt-3">
-                    <button class="btn btn-dark" id="filterPriceBtn">Done</button>
-                    <button class="btn btn-secondary" id="resetPriceBtn">Reset</button>
-                </div>
-            </ul>
-        </div>
-
-        <div class="dropdown sort-dropdown">
-        <button class="btn dropdown-toggle" type="button" id="sortFilter" data-bs-toggle="dropdown" aria-expanded="false">
-            Sort by
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="sortFilter">
-            <li><a class="dropdown-item" data-sort="low" href="#">Low to High</a></li>
-            <li><a class="dropdown-item" data-sort="high" href="#">High to Low</a></li>
-        </ul>
-    </div>
-    </div>
-
-    <!-- Product Grid -->
-    <div class="row g-4" id="product-grid">
-    <div class="col-12 col-sm-6 col-md-3 product-card" data-category="tops" data-size="m" data-price="120000">
-            <div class="card">
-                    <img src="../resource/images/Barang_Branded/Kids/top_s/oversized printed sweatshirt hotwheels.avif" 
-                    data-hover-src="../resource/images/Barang_Branded/Kids/top_s/oversized printed sweatshirt hotwheels closeup.avif"
-                    class="card-img-top hover-image" alt="Product Image">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <p class="product-size">Size M</p>
-                        <img src="../resource/images/Icon_Gambar/Semua_Icon/love.png" class="wishlist-icon" alt="Wishlist Icon" style="width: 24px; height: 24px;">
-                    </div>
-                        <h5 class="product-name">Oversized Printed Sweatshirt Hotwheels</h5>
-                    </a>
-                    <p class="product-price">Rp 120.000</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-3 product-card" data-category="tops" data-size="s" data-price="120000">
-            <div class="card">
-                <img src="../resource/images/Barang_Branded/Kids/top_s/oversized printed sweatshirt minecraft.avif" 
-                    data-hover-src="../resource/images/Barang_Branded/Kids/top_s/oversized printed sweatshirt minecraft closeup.avif"
-                    class="card-img-top hover-image" alt="Product Image">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <p class="product-size">Size S</p>
-                        <img src="../resource/images/Icon_Gambar/Semua_Icon/love.png" class="wishlist-icon" alt="Wishlist Icon" style="width: 24px; height: 24px;">
-                    </div>
-                    <h5 class="product-name">Oversized Printed Sweatshirt Minecraft</h5>
-                    <p class="product-price">Rp 120.000</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-3 product-card" data-category="tops" data-size="s" data-price="175000">
-            <div class="card">
-                <img src="../resource/images/Barang_Branded/Kids/top_s/oversized printed sweatshirt tomjerry.avif"
-                 data-hover-src="../resource/images/Barang_Branded/Kids/top_s/oversized printed sweatshirt tomjerry closeup.avif"
-                class="card-img-top hover-image" alt="Product Image">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <p class="product-size">Size S</p>
-                        <img src="../resource/images/Icon_Gambar/Semua_Icon/love.png" class="wishlist-icon" alt="Wishlist Icon" style="width: 24px; height: 24px;">
-                    </div>
-                    <h5 class="product-name">Oversized Printed Sweatshirt Tom and Jerry</h5>
-                    <p class="product-price">Rp 175.000</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-3 product-card" data-category="tops" data-size="s" data-price="125000">
-            <div class="card">
-                <img src="../resource/images/Barang_Branded/Kids/top_s/oversized printed sweatshirt tomnJerry.avif" 
-                data-hover-src="../resource/images/Barang_Branded/Kids/top_s/oversized printed sweatshirt tomnJerry closeup.avif"
-                class="card-img-top hover-image" alt="Product Image">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <p class="product-size">Size S</p>
-                        <img src="../resource/images/Icon_Gambar/Semua_Icon/love.png" class="wishlist-icon" alt="Wishlist Icon" style="width: 24px; height: 24px;">
-                    </div>
-                    <h5 class="product-name">Oversized Printed Sweatshirt Tom & Jerry</h5>
-                    <p class="product-price">Rp 125.000</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-3 product-card" data-category="bottoms" data-size="m" data-price="85000">
-            <div class="card">
-                <img src="../resource/images/Barang_Branded/Kids/bottom_s/baggy fit bootcut.avif" 
-                data-hover-src="../resource/images/Barang_Branded/Kids/bottom_s/baggy fit bootcut girl.avif"
-                class="card-img-top hover-image" alt="Product Image">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <p class="product-size">Size S</p>
-                        <img src="../resource/images/Icon_Gambar/Semua_Icon/love.png" class="wishlist-icon" alt="Wishlist Icon" style="width: 24px; height: 24px;">
-                    </div>
-                    <h5 class="product-name">Baggy Fit Bootcut</h5>
-                    <p class="product-price">Rp 85.000</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-3 product-card" data-category="bottoms" data-size="m" data-price="110000">
-            <div class="card">
-                <img src="../resource/images/Barang_Branded/Kids/bottom_s/light denim blue.avif" 
-                data-hover-src="../resource/images/Barang_Branded/Kids/bottom_s/light denim blue boy.avif"
-                class="card-img-top hover-image" alt="Product Image">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <p class="product-size">Size M</p>
-                        <img src="../resource/images/Icon_Gambar/Semua_Icon/love.png" class="wishlist-icon" alt="Wishlist Icon" style="width: 24px; height: 24px;">
-                    </div>
-                    <h5 class="product-name">Light Denim Blue</h5>
-                    <p class="product-price">Rp 110.000</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-3 product-card" data-category="bottoms" data-size="s" data-price="115000">
-            <div class="card">
-                <img src="../resource/images/Barang_Branded/Kids/bottom_s/loose fit jeans.avif" 
-                data-hover-src="../resource/images/Barang_Branded/Kids/bottom_s/loose fit jeans boy.avif"
-                class="card-img-top hover-image" alt="Product Image">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <p class="product-size">Size S</p>
-                        <img src="../resource/images/Icon_Gambar/Semua_Icon/love.png" class="wishlist-icon" alt="Wishlist Icon" style="width: 24px; height: 24px;">
-                    </div>
-                    <h5 class="product-name">Loose Fit Jeans</h5>
-                    <p class="product-price">Rp 115.000</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-3 product-card" data-category="bottoms" data-size="s" data-price="130000">
-            <div class="card">
-                <img src="../resource/images/Barang_Branded/Kids/bottom_s/pique shorts.avif" 
-                data-hover-src="../resource/images/Barang_Branded/Kids/bottom_s/pique shorts closeup.avif"
-                class="card-img-top hover-image" alt="Product Image">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <p class="product-size">Size S</p>
-                        <img src="../resource/images/Icon_Gambar/Semua_Icon/love.png" class="wishlist-icon" alt="Wishlist Icon" style="width: 24px; height: 24px;">
-                    </div>
-                    <h5 class="product-name">Pique Shorts</h5>
-                    <p class="product-price">Rp 130.000</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-3 product-card" data-category="footwear" data-size="onesize" data-price="145000">
-            <div class="card">
-                <img src="../resource/images/Barang_Branded/Kids/shoes/white sneakers.avif" 
-                data-hover-src="../resource/images/Barang_Branded/Kids/shoes/white sneakers top.avif"
-                class="card-img-top hover-image" alt="Product Image">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <p class="product-size">Size 36</p>
-                        <img src="../resource/images/Icon_Gambar/Semua_Icon/love.png" class="wishlist-icon" alt="Wishlist Icon" style="width: 24px; height: 24px;">
-                    </div>
-                    <h5 class="product-name">White Sneakers</h5>
-                    <p class="product-price">Rp 145.000</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-3 product-card" data-category="footwear" data-size="onesize" data-price="80000">
-            <div class="card">
-                <img src="../resource/images/Barang_Branded/Kids/shoes/Nike flex runner 3.png" 
-                data-hover-src="../resource/images/Barang_Branded/Kids/shoes/Nike flex runner 3top.png"
-                class="card-img-top hover-image" alt="Product Image">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <p class="product-size">Size 32</p>
-                        <img src="../resource/images/Icon_Gambar/Semua_Icon/love.png" class="wishlist-icon" alt="Wishlist Icon" style="width: 24px; height: 24px;">
-                    </div>
-                    <h5 class="product-name">Nike flex runner 3</h5>
-                    <p class="product-price">Rp 80.000</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-3 product-card" data-category="footwear" data-size="onesize" data-price="100000">
-            <div class="card">
-                <img src="../resource/images/Barang_Branded/Kids/shoes/Jordan 1 Retro Low 'LNY'.png" 
-                data-hover-src="../resource/images/Barang_Branded/Kids/shoes/Jordan 1 Retro Low 'LNY' top.png"
-                class="card-img-top hover-image" alt="Product Image">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <p class="product-size">Size 36</p>
-                        <img src="../resource/images/Icon_Gambar/Semua_Icon/love.png" class="wishlist-icon" alt="Wishlist Icon" style="width: 24px; height: 24px;">
-                    </div>
-                    <h5 class="product-name">Jordan 1 Retro Low 'LNY'</h5>
-                    <p class="product-price">Rp 100.000</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-3 product-card" data-category="footwear" data-size="onesize" data-price="110000">
-            <div class="card">
-                <img src="../resource/images/Barang_Branded/Kids/shoes/Ar jordan 4 retro white thunder.png" 
-                data-hover-src="../resource/images/Barang_Branded/Kids/shoes/Ar jordan 4 retro white thunder top.png"
-                class="card-img-top hover-image" alt="Product Image">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <p class="product-size">Size 37</p>
-                        <img src="../resource/images/Icon_Gambar/Semua_Icon/love.png" class="wishlist-icon" alt="Wishlist Icon" style="width: 24px; height: 24px;">
-                    </div>
-                    <h5 class="product-name">Air Jordan 4 Retro White Thunder</h5>
-                    <p class="product-price">Rp 110.000</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Centered Load More Link -->
-    <div class="more-link text-center mt-5">
-        <a href="#">More <img src="../resource/images/Icon_Gambar/Semua_Icon/arrow_down.png" alt="More Icon" style="width: 16px; height: 16px;"></a>
-    </div>
-</section>
+  
+    <!-- Navigasi ke Halaman Lain -->
+    <div class="nav-to-sections text-center mt-5">
+        <a href="shop.html" class="btn btn-dark mx-2 px-4 py-2">← Web Development</a>
+        <a href="shopkid.html" class="btn btn-dark mx-2 px-4 py-2">Network & Security</a>
+        <a href="shopmen.html" class="btn btn-dark mx-2 px-4 py-2">Linux & Server →</a>
+        <a href="../index.html" class="btn btn-dark mx-2 px-4 py-2">🏠 Beranda</a>
+      </div>
+  </section>
+  
+  
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
